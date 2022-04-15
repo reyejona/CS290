@@ -1,0 +1,318 @@
+* {box-sizing:border-box}
+
+body {
+  background-color: #333333;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  max-height: 900px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.slides {
+  object-fit: cover;
+  object-position: 50% 50%;
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 10px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ffffff;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.banner{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #394047;
+  color: white;
+  height: 100px;
+  border-bottom-style: solid;
+  border-color: #6591b5;
+  border-width: 5px;
+  padding-bottom: 20px !important;
+}
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #394047;
+}
+.navi {
+  float: left;
+
+}
+
+.naviLink {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 26px;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 20px
+}
+
+.naviLink:hover:not(.active) {
+  background-color: #111;
+}
+
+.active{
+  background-color: #6591b5
+}
+
+.footer{
+  list-style-type: none;
+  margin: 0;
+  padding: 0 200px;
+  overflow: hidden;
+  background-color: #394047;
+}
+
+.foot{
+  float: left;
+  padding: 30px 50px
+}
+.foot:last-child {
+  float: right;
+}
+
+.socialLink{
+  display: block;
+  font-family: Arial;
+  color: #8096a4;
+  text-align: center;
+  padding: 20px 26px;
+  text-decoration: none;
+  font-size: 25px;
+  border-style: solid;
+  border-color: #6591b5;
+  border-width: 1px
+}
+
+.socialLink:hover {
+  background-color: #6591b5;
+}
+
+.intro {
+  color: #000000;
+  font-size: 25px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+}
+
+.aboutImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
+.show {
+  color: #ffffff;
+  font-size: 25px;
+  padding: 8px 12px;
+}
+
+.submit{
+  width: 15em;  
+  height: 2em;
+
+}
+
+.comments{
+  padding: 50px;
+}
+
+.direct{
+  padding: 50px;
+}
+
+
+.cm{
+  border-top-style: double;
+  border-color: #6591b5;
+  border-width: 5px;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 50px 12px;
+}
+
+
+/* Portfolio */
+.header {
+  padding: 30px;
+  font-size: 20px;
+  font-family: Arial;
+  background: #ddd;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles, adds scroll box if necessary */
+.card {
+  background-color: white;
+  font-family: Arial;
+  padding: 20px;
+  margin-top: 20px;
+  overflow: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bfooter {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.experience {
+  display: none
+}
+
+
+
+.project {
+  display: none
+}
+
+.showButton{
+  background-color: #6591b5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float:right;
+}
+
+.hint{
+  color:white;
+  padding: 20px 40px;
+  font-size:20px;
+  display: none
+}
+
+.show:hover + .hint{
+  display:block;
+}
